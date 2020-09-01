@@ -15,8 +15,10 @@ fetchOneMovie()
 
 const buildMovie = (detail) => {
 
+  const moviePoster = document.querySelector('img')
+  moviePoster.src = detail.poster
+  console.log(moviePoster)
 movieCard.id = detail.id
-
 movieCard.innerHTML = `
 <div id="title" class="title">${detail.title}</div>
 <div id="runtime" class="meta">${detail.runtime} minutes</div>
